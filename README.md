@@ -1,6 +1,6 @@
-# CRESS-DNA Virus Genome Recovery — Intern Task
+# **CRESS-DNA Virus Genome Recovery**
 
-**Omyx Lab · Bioinformatics internship exercise**
+## **Omyx Lab Bioinformatics internship exercise**
 
 Welcome! This is a small, self-contained research project designed for you to learn by
 doing. Everything you need to begin is already in this repository: three sets of raw
@@ -8,7 +8,7 @@ sequencing reads and this guide. Your job is to turn those reads into finished v
 genomes, describe them, and work out how they relate to viruses that scientists already
 know about.
 
-Please read this whole page slowly before you run anything. It explains the story behind
+Please read this whole page before you run anything **_(its a long read)_**. It explains the story behind
 the data, what we're asking you to produce, and the few rules we'd like you to follow. It
 does **not** tell you exactly how to do each step — figuring that out (by reading,
 experimenting, and thinking) is the point. But it does explain enough that you won't feel
@@ -200,13 +200,9 @@ What that means in practice:
 - **Never paste in something you don't understand.** AI tools confidently give wrong
   answers, out-of-date commands, and tools that don't exist. Treat every suggestion as a
   lead to check, not a fact. Verify it, test it, and make sure it actually fits *this* data.
-- **Be honest about it.** In your report, add a short line or two on where AI helped you
-  (e.g. "used an assistant to understand what a phylogenetic tree shows, and to debug a
-  samtools error"). This is completely fine and we'd rather you were open about it.
+- **You would be required to explain your reasoning in a presentation.** This is just to emphasize that you should understand the reasoning behind your choices, not just follow instructions. If you can't explain it, you don't understand it.
 
-Think of it this way: the goal of this exercise is to grow *your* skills and judgement. An
-AI that does the thinking for you robs you of exactly the thing you're here to build. Let it
-tutor you, not replace you.
+Think of it this way: the goal of this exercise is to grow *your* skills and judgement. An AI that does the thinking for you robs you of exactly the thing you're here to build. Let it tutor you, not replace you.
 
 ---
 
@@ -214,8 +210,12 @@ tutor you, not replace you.
 
 When you're done, write up what you did as a report and save it at the **top level of the
 repository as `REPORT.md`**. We'd really like it in **Markdown** (the `.md` format) because
-it displays nicely on GitHub and is easy to read, it also helps you easily showcase your work.  But if you much prefer another format,
-that's okay.
+it displays nicely on GitHub and is easy to read, it also helps you easily showcase your work.  But if you much prefer another format, that's okay.
+
+> You can use the template `REPORT_template.md` as a starting point, but feel free to
+reorganise it if you think a different structure would make your report clearer. The most important thing is that it **clearly explains what you did, why you did it, and what you found**. The report is the main thing we will read, so make it clear and easy to follow. You can include figures, tables, and links to files in your repository as needed.
+
+> You can also prepare your report in whatever format and then convert it to Markdown later, but please we encourage that the final format be in markdown.
 
 Your report should include, at least:
 
@@ -246,11 +246,11 @@ Your report should include, at least:
 5. When you're finished, **push everything to your own GitHub repository** and share the
    link with us, with `REPORT.md` in Markdown so it reads nicely on GitHub.
 
-If you get properly stuck for a while, that's normal — note down what you tried and what
+If you get stuck, that's normal, it happens to the best of us too. Just note down what you tried and what
 confused you, and bring it to your check-in. Being able to describe a problem clearly is
-itself a skill we're looking for.
+itself a skill you need to learn.
 
-Good luck — enjoy it!
+Good luck
 
 ---
 
@@ -258,48 +258,59 @@ Good luck — enjoy it!
 
 By the time you finish, you'll have hands-on experience with every one of these:
 
-**Working at the command line (Bash)**
+### Working at the command line (Bash)
+
 - Navigating a Unix/Linux system and managing files from the terminal
 - Writing Bash scripts, using pipes, redirection, loops, and chaining tools together
 - Capturing output and keeping audit logs (`tee`, timestamps, version capture)
 
-**Project organisation & reproducibility**
+### Project organisation & reproducibility**
+
 - Structuring a bioinformatics project cleanly (raw data vs. scripts vs. results)
 - Keeping raw data read-only and making every result reproducible from scripts
 - Recording your software environment and exact tool versions (e.g. conda)
 
-**Version control & collaboration (Git & GitHub)**
+### Version control & collaboration (Git & GitHub)**
+
 - Cloning, committing, branching, and pushing with Git
 - Publishing and sharing work on GitHub
 - Writing clear documentation and a report in Markdown
 
-**Sequencing data literacy**
+### Sequencing data literacy
+
 - Understanding FASTQ files, long-read (Oxford Nanopore) data, and quality scores
 - Quality-checking reads and inspecting read-length and coverage/depth
 
-**Genome assembly**
+### Genome assembly
+
 - What assembly actually is, and how to think critically about read structure
 - Long-read assembly and consensus-building, and why amplicon/circular data needs care
 - Handling circular genomes correctly and polishing a draft to a finished sequence
 
-**Genome annotation & characterisation**
+### Genome annotation & characterisation
+
 - Finding open reading frames and identifying genes (Rep, CP)
 - Detecting conserved sequence motifs and computing genome stats (length, GC%)
 
-**Sequence databases & comparison**
+### Sequence databases & comparison
+
 - Querying NCBI/GenBank programmatically from the command line (BLAST+, Entrez Direct, `datasets`)
 - Interpreting BLAST hits, accession numbers, and percent identity
 
-**Alignment & phylogenetics**
+### Alignment & phylogenetics
+
 - Building multiple sequence alignments and pairwise identity matrices
 - Constructing and interpreting phylogenetic trees (model choice, support values, rooting)
 
-**Scientific thinking & communication**
+### Scientific thinking & communication
+
 - Forming a question, justifying every tool and parameter choice, and reaching an evidence-based conclusion (divergent vs. similar)
 - Writing up methods and results so others can follow and reproduce them
 
-**Responsible AI use**
+### Responsible AI use
+
 - Using AI as a tutor and companion rather than a crutch, verifying its output, and documenting where you used it
 
-**Independence & problem-solving**
+### Independence & problem-solving
+
 - Reading documentation, troubleshooting errors, and working through ambiguity on your own

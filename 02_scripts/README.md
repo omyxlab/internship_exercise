@@ -1,4 +1,4 @@
-# 02_Scripts
+# 02_scripts
 
 All of your code lives here. Number scripts in execution order so the pipeline is obvious
 and re-runnable, for example:
@@ -15,6 +15,6 @@ and re-runnable, for example:
 
 Rules:
 - Every result in `04_results/` must be reproducible by running these scripts in order.
-- Read inputs from `01_Data/`, write intermediates to `03_analysis/`, write final outputs
+- Read inputs from `01_data/`, write intermediates to `03_analysis/`, write final outputs
   to `04_results/`, and tee logs to `99_logs/`.
 - Any language is fine (bash, Python, R, …); justify tool choices in `REPORT.md`.

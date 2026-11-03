@@ -1,4 +1,4 @@
 isolate	read_file	platform	library	enrichment	amplification
-isolate_A	01_Data/isolate_A.fastq	Oxford Nanopore	amplicon	RCA (circular DNA)	abutting-primer PCR (full genome)
-isolate_B	01_Data/isolate_B.fastq	Oxford Nanopore	amplicon	RCA (circular DNA)	abutting-primer PCR (full genome)
-isolate_C	01_Data/isolate_C.fastq	Oxford Nanopore	amplicon	RCA (circular DNA)	abutting-primer PCR (full genome)
+isolate_A	01_data/isolate_A.fastq	Oxford Nanopore	amplicon	RCA (circular DNA)	abutting-primer PCR (full genome)
+isolate_B	01_data/isolate_B.fastq	Oxford Nanopore	amplicon	RCA (circular DNA)	abutting-primer PCR (full genome)
+isolate_C	01_data/isolate_C.fastq	Oxford Nanopore	amplicon	RCA (circular DNA)	abutting-primer PCR (full genome)

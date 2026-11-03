@@ -27,7 +27,7 @@ designed from the initial contigs and used to **PCR-amplify the full circular ge
 three positive samples. Each amplicon was then sequenced on nanopore. **Those three read
 sets are what you have been given** — one per isolate:
 
-| File (in `01_Data/`) | Isolate |
+| File (in `01_data/`) | Isolate |
 |---|---|
 | `isolate_A.fastq` | A |
 | `isolate_B.fastq` | B |
@@ -76,7 +76,7 @@ intuition.
   choice in your report**. "I used X because Y" for each major step.
 - **Reproducibility is graded.** Anyone should be able to re-run your scripts, in order,
   and regenerate every file in `04_results/`.
-- **Do not edit the files in `01_Data/`.** Treat them as read-only inputs. Any
+- **Do not edit the files in `01_data/`.** Treat them as read-only inputs. Any
   filtered/trimmed/derived reads go in `03_analysis/`.
 - **Log everything** (see `99_logs/` below). This is for auditing — we want to be able to
   see exactly what was run, with which versions, and when.
@@ -101,8 +101,8 @@ order you will use them. Each folder has its own short `README.md` as a reminder
 | Folder | What lives here |
 |---|---|
 | `00_meta/` | Project metadata: the sample manifest, notes on your compute environment and **exact tool versions** (e.g. a `conda env export`), and any provenance notes. Descriptive info, **not** analysis outputs. |
-| `01_Data/` | **Raw input reads — read-only.** The three FASTQ files. Never modify these. |
-| `02_Scripts/` | **All of your code**, ideally numbered in execution order (e.g. `01_qc.sh`, `02_assembly.sh`, `03_annotation.sh`, …). Everything must be driven from scripts here. |
+| `01_data/` | **Raw input reads — read-only.** The three FASTQ files. Never modify these. |
+| `02_scripts/` | **All of your code**, ideally numbered in execution order (e.g. `01_qc.sh`, `02_assembly.sh`, `03_annotation.sh`, …). Everything must be driven from scripts here. |
 | `03_analysis/` | **Working / intermediate outputs**: QC reports, filtered reads, assembly/consensus attempts, alignments, BLAST hit tables, tree files, scratch work. This is your workbench. |
 | `04_results/` | **Final, report-ready outputs only**: the three finished genome FASTAs, annotation tables, the whole-genome/Rep/CP identity matrices, final trees/figures, summary tables. These are the files your report points to. |
 | `99_logs/` | **Logs for auditing.** Command logs, stdout/stderr from runs, timestamps, and a record of tool versions. Keep a running log so your whole process is traceable. |
@@ -137,7 +137,7 @@ Your report should cover, at minimum:
 - **Comparisons** at all three levels — **whole genome, Rep, CP** — as identity
   matrices and/or alignments, and phylogenetic trees if you build them.
 - **Conclusion**: divergent vs. similar, with the evidence that supports it.
-- A short **reproducibility** section: how to re-run everything from `02_Scripts/`.
+- A short **reproducibility** section: how to re-run everything from `02_scripts/`.
 
 ---
 
@@ -145,7 +145,7 @@ Your report should cover, at minimum:
 
 1. **Clone** this repository and work **locally**.
 2. Set up your environment, record it in `00_meta/`, and start capturing versions/logs.
-3. Work through the stages, keeping scripts in `02_Scripts/`, intermediates in
+3. Work through the stages, keeping scripts in `02_scripts/`, intermediates in
    `03_analysis/`, and only polished outputs in `04_results/`. Log as you go.
 4. Write `REPORT.md` at the repo root.
 5. When finished, **push everything to your own GitHub repository** (public or shared with

@@ -1,0 +1,26 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+.*.swp
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Conda/venv envs committed by accident
+env/
+venv/
+.conda/
+
+# Common large/intermediate bioinformatics artifacts (keep final outputs in 04_results/)
+*.bam
+*.bai
+*.sam
+*.fastq.gz.tmp
+*.tmp
+
+# But always keep the provided raw data and folder placeholders
+!01_Data/*.fastq
+!**/.gitkeep

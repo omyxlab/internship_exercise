@@ -214,7 +214,7 @@ tutor you, not replace you.
 
 When you're done, write up what you did as a report and save it at the **top level of the
 repository as `REPORT.md`**. We'd really like it in **Markdown** (the `.md` format) because
-it displays nicely on GitHub and is easy to read — but if you much prefer another format,
+it displays nicely on GitHub and is easy to read, it also helps you easily showcase your work.  But if you much prefer another format,
 that's okay.
 
 Your report should include, at least:
@@ -227,7 +227,7 @@ Your report should include, at least:
   reads cover it).
 - **The closest GenBank matches** for each isolate: accession number, what it is, how
   similar it is, and how you found it from the command line.
-- **Your comparisons** at all three levels — **whole genome, Rep, and CP** — shown as
+- **Your comparisons** at all three levels, **whole genome, Rep, and CP**, shown as
   identity tables and/or trees.
 - **Your conclusion**: similar or divergent, and the evidence behind it.
 - A short **"how to reproduce this"** section explaining how to re-run everything from
@@ -237,7 +237,7 @@ Your report should include, at least:
 
 ## 7. How to get going
 
-1. **Clone** this repository to your own computer and work there.
+1. **Clone** this repository to your own computer and work there. `git clone <this repo's URL>` and `cd` into it. We want to see your own work.
 2. Set up the software you'll need, write down your setup and tool versions in `00_meta/`,
    and start keeping logs from the very first command.
 3. Work through the stages: keep your code in `02_scripts/`, your in-between files in
@@ -251,3 +251,55 @@ confused you, and bring it to your check-in. Being able to describe a problem cl
 itself a skill we're looking for.
 
 Good luck — enjoy it!
+
+---
+
+## What you'll learn working on this project
+
+By the time you finish, you'll have hands-on experience with every one of these:
+
+**Working at the command line (Bash)**
+- Navigating a Unix/Linux system and managing files from the terminal
+- Writing Bash scripts, using pipes, redirection, loops, and chaining tools together
+- Capturing output and keeping audit logs (`tee`, timestamps, version capture)
+
+**Project organisation & reproducibility**
+- Structuring a bioinformatics project cleanly (raw data vs. scripts vs. results)
+- Keeping raw data read-only and making every result reproducible from scripts
+- Recording your software environment and exact tool versions (e.g. conda)
+
+**Version control & collaboration (Git & GitHub)**
+- Cloning, committing, branching, and pushing with Git
+- Publishing and sharing work on GitHub
+- Writing clear documentation and a report in Markdown
+
+**Sequencing data literacy**
+- Understanding FASTQ files, long-read (Oxford Nanopore) data, and quality scores
+- Quality-checking reads and inspecting read-length and coverage/depth
+
+**Genome assembly**
+- What assembly actually is, and how to think critically about read structure
+- Long-read assembly and consensus-building, and why amplicon/circular data needs care
+- Handling circular genomes correctly and polishing a draft to a finished sequence
+
+**Genome annotation & characterisation**
+- Finding open reading frames and identifying genes (Rep, CP)
+- Detecting conserved sequence motifs and computing genome stats (length, GC%)
+
+**Sequence databases & comparison**
+- Querying NCBI/GenBank programmatically from the command line (BLAST+, Entrez Direct, `datasets`)
+- Interpreting BLAST hits, accession numbers, and percent identity
+
+**Alignment & phylogenetics**
+- Building multiple sequence alignments and pairwise identity matrices
+- Constructing and interpreting phylogenetic trees (model choice, support values, rooting)
+
+**Scientific thinking & communication**
+- Forming a question, justifying every tool and parameter choice, and reaching an evidence-based conclusion (divergent vs. similar)
+- Writing up methods and results so others can follow and reproduce them
+
+**Responsible AI use**
+- Using AI as a tutor and companion rather than a crutch, verifying its output, and documenting where you used it
+
+**Independence & problem-solving**
+- Reading documentation, troubleshooting errors, and working through ambiguity on your own
